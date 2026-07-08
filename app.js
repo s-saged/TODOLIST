@@ -1,3 +1,6 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
 let InputText = document.getElementById("t");
 let btn = document.getElementById("b");
 let task = document.getElementById("p");
