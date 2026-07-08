@@ -1,27 +1,11 @@
-const CACHE_NAME = 'todo-cache-v1';
-const ASSETS = [
-  '/',
-  'index.html',
-  'style.css',
-  'app.js',
-  'icon.png',
-  'manifest.json'
-];
-
-// تثبيت الـ Service Worker وحفظ الملفات
 self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS);
-    })
-  );
+  self.skipWaiting();
 });
 
-// تشغيل التطبيق وجلب الملفات من الكاش لو مفيش نت
+self.addEventListener('activate', (e) => {
+  e.waitUntil(clients.claim());
+});
+
 self.addEventListener('fetch', (e) => {
-  e.respondWith(
-    caches.match(e.request).then((response) => {
-      return response || fetch(e.request);
-    })
-  );
+  e.respondWith(fetch(e.request));
 });
