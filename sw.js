@@ -1,11 +1,11 @@
 const CACHE_NAME = 'todo-cache-v1';
 const ASSETS = [
   '/',
-  '/index.html',
-  '/style.css',
-  '/app.js',
-  '/icon.png',
-  '/manifest.json'
+  'index.html',
+  'style.css',
+  'app.js',
+  'icon.png',
+  'manifest.json'
 ];
 
 // تثبيت الـ Service Worker وحفظ الملفات
