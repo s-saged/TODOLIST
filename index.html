@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <!-- ربط ملف الـ Manifest اللي فيه الأيقونة واسم التطبيق -->
+<link rel="manifest" href="manifest.json">
+
+<!-- كود جافا سكريبت لتشغيل الـ Service Worker -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log('App is ready to be installed!'))
+      .catch((err) => console.log('Service Worker Error', err));
+  }
+</script>
+</head>
+<body>
+    <h1>👉 To_Do List 👈</h1>
+ <div class="container">
+       
+    <label for="task">TASK :</label>
+    <input type="text" id="t" name="task" 
+    placeholder="Go To School." required>
+    <button id="b" onclick="go()">submit</button>
+
+    <div id="p" ></div>
+ </div>
+    <script src="app.js"></script>
+</body>
+</html>
