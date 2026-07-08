@@ -3,7 +3,7 @@
   "name": "⚡ Premium To-Do List",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "/icon.png",
       "type": "image/png",
       "sizes": "512x512 192x192 256x256",
       "purpose": "any maskable"
