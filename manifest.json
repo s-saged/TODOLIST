@@ -1,6 +1,7 @@
 {
   "short_name": "ToDoList",
   "name": "⚡ Premium To-Do List",
+  "id": "/index.html",
   "icons": [
     {
       "src": "https://i.ibb.co/6w4g7Yp/todo-icon.png",
