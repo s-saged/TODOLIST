@@ -3,9 +3,9 @@
   "name": "⚡ Premium To-Do List",
   "icons": [
     {
-      "src": "/icon.png",
+      "src": "https://i.ibb.co/6w4g7Yp/todo-icon.png",
       "type": "image/png",
-      "sizes": "512x512 192x192 256x256",
+      "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
