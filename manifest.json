@@ -1,16 +1,16 @@
 {
   "short_name": "ToDoList",
   "name": "⚡ Premium To-Do List",
-  "id": "/index.html",
+  "id": "index.html",
   "icons": [
     {
-      "src": "https://i.ibb.co/6w4g7Yp/todo-icon.png",
+      "src": "icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "background_color": "#e0f2fe",
   "theme_color": "#3b82f6",
   "display": "standalone",
