@@ -8,15 +8,10 @@
     <title>TO_Do List</title>
     <!-- ربط ملف الـ Manifest اللي فيه الأيقونة واسم التطبيق -->
 <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4F7CFF">
 
 <!-- كود جافا سكريبت لتشغيل الـ Service Worker -->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-      .then(() => console.log('App is ready to be installed!'))
-      .catch((err) => console.log('Service Worker Error', err));
-  }
-</script>
+
 </head>
 <body>
     <h1>👉 To_Do List 👈</h1>
@@ -30,5 +25,12 @@
     <div id="p" ></div>
  </div>
     <script src="app.js"></script>
+    <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js");
+  });
+}
+</script>
 </body>
 </html>
