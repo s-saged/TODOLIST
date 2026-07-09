@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://todolist-self-six-36.vercel.app/sitemap.xml
